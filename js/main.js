@@ -2,11 +2,11 @@
 // 설정값 — README에 명시한 대로 자유 변경 가능한 기준값들을 한곳에 모아둠
 // =============================================================
 const CONFIG = {
-  githubUsername: 'YOUR_GITHUB_ID', // ← 본인 GitHub 아이디로 교체
+  githubUsername: 'solbao-dev', // ← 본인 GitHub 아이디로 교체
   scrollTopThreshold: 300,          // 탑 버튼 등장 기준 (px)
   navBgThreshold: 60,               // 네비게이션 배경 변경 기준 (px)
   revealThreshold: 0.2,             // Intersection Observer threshold
-  typingText: '안녕하세요, OOO입니다.',
+  typingText: '안녕하세요, 윤솔지입니다.',
   typingSpeedMs: 90,
 };
 
