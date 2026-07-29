@@ -214,7 +214,7 @@ function initProjects() {
       return `
         <article class="project-card">
           <h3><a href="${html_url}" target="_blank" rel="noopener noreferrer">${name}</a></h3>
-          <p>${description ? escapeHtml(description) : '설명이 없는 저장소입니다.'}</p>
+          <p>${description ? escapeHtml(description) : '// 설명 작성 중 (커밋 예정).'}</p>
           <div class="project-meta">
             ${language ? `<span class="lang">${language}</span>` : ''}
             <span>★ ${stargazers_count}</span>
