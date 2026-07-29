@@ -2,8 +2,8 @@
 
 > 코디세이 과제 4-1 — 순수 HTML/CSS/JavaScript로 처음부터 만든 반응형 포트폴리오
 
-**배포 URL:** `https://YOUR_GITHUB_ID.github.io/REPO_NAME/` ← 배포 후 교체
-**GitHub 저장소:** `https://github.com/YOUR_GITHUB_ID/REPO_NAME` ← 배포 후 교체
+배포 URL: https://solbao-dev.github.io/my-portfolio/
+GitHub 저장소: https://github.com/solbao-dev/my-portfolio
 
 ---
 
