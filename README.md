@@ -83,7 +83,7 @@ React 학습 이전에 웹의 기본 동작 원리 — "사용자 이벤트 → 
 
 ## 7. 로컬 실행 방법
 
-1. 저장소 클론: `git clone https://github.com/YOUR_GITHUB_ID/REPO_NAME.git`
+1. 저장소 클론: `git clone https://github.com/solbao-dev/my-portfolio.git`
 2. VS Code에서 폴더 열기
 3. `index.html` 우클릭 → **Open with Live Server**
 4. `js/main.js`의 `CONFIG.githubUsername`을 본인 GitHub 아이디로 교체
@@ -92,14 +92,14 @@ React 학습 이전에 웹의 기본 동작 원리 — "사용자 이벤트 → 
 
 1. GitHub 저장소 → **Settings → Pages**
 2. Source: `Deploy from a branch`, Branch: `main` / `root`
-3. 몇 분 후 `https://YOUR_GITHUB_ID.github.io/REPO_NAME/` 접속 확인
+3. 몇 분 후 `https://solbao-dev.github.io/my-portfolio/` 접속 확인
 4. 배포 후 데스크톱/모바일/다크모드 각각 재검증
 
 ## 9. 스크린샷
 
 | 데스크톱 | 모바일 | 다크모드 |
 |---|---|---|
-| _(스크린샷 첨부)_ | _(스크린샷 첨부)_ | _(스크린샷 첨부)_ |
+| ![데스크톱](images/desktop.png) | ![모바일](images/mobile.png) | ![다크모드](images/darkmode.png) |
 
 ## 10. 알려진 제약
 
