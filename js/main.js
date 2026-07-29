@@ -310,3 +310,31 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
   initFooterYear();
 });
+// =============================================================
+// ★ 이 파일의 핵심 구조 — 이벤트 → 상태 → 화면변화
+// =============================================================
+// 1. initThemeToggle()
+//    이벤트: 🌙 버튼 클릭
+//    상태:   dark ↔ light 값 변경 + localStorage 저장
+//    화면:   <html>의 data-theme 속성 변경 → CSS 변수 전체 전환
+//
+// 2. initHamburgerMenu()
+//    이벤트: ☰ 버튼 클릭
+//    상태:   nav에 'is-open' 클래스 붙었다 떨어졌다
+//    화면:   메뉴가 오른쪽에서 슬라이드로 나타나고 사라짐
+//
+// 3. initScrollEffects()
+//    이벤트: 스크롤
+//    상태:   scrollY가 60px/300px 넘었는지 여부
+//    화면:   네비 배경 변경 + ↑ 버튼 등장
+//
+// 4. initProjects() → setUiState()
+//    이벤트: 페이지 로드 (GitHub API 자동 호출)
+//    상태:   loading / success / error / empty 중 하나
+//    화면:   해당 상태 UI만 보이고 나머지 3개는 hidden
+//
+// 5. initContactForm()
+//    이벤트: 폼 제출 버튼 클릭
+//    상태:   각 필드 유효성 true/false
+//    화면:   에러 메시지 표시 또는 성공 메시지 표시
+// =============================================================
