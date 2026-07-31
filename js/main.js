@@ -282,7 +282,17 @@ function initContactForm() {
       return;
     }
 
-    // 실제 전송 대신 성공 상태로 전환 (Formspree/EmailJS 연동 시 이 지점에서 fetch 호출)
+    // 실제 전송 대신 성공 상태로 전환 (Formspree/EmailJS 연동 시 이 지점에서 fetch 호출)> test formspree
+    await fetch('https://formspree.io/f/xqeroyek', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: fields.name.input.value,
+        email: fields.email.input.value,
+        message: fields.message.input.value,
+      })
+    });
+    
     successEl.hidden = false;
     form.reset();
     Object.values(fields).forEach(({ errorEl }) => { errorEl.textContent = ''; });
