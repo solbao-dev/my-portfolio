@@ -271,7 +271,7 @@ function initContactForm() {
     fields[key].input.addEventListener('input', () => validateField(key));
   });
 
-  form.addEventListener('submit', (event) => {
+  form.addEventListener('submit', async (event) => {
     event.preventDefault(); // 기본 제출(페이지 새로고침) 방지
 
     const results = Object.keys(fields).map(validateField);
@@ -292,7 +292,7 @@ function initContactForm() {
         message: fields.message.input.value,
       })
     });
-    
+
     successEl.hidden = false;
     form.reset();
     Object.values(fields).forEach(({ errorEl }) => { errorEl.textContent = ''; });
@@ -342,7 +342,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //    이벤트: 페이지 로드 (GitHub API 자동 호출)
 //    상태:   loading / success / error / empty 중 하나
 //    화면:   해당 상태 UI만 보이고 나머지 3개는 hidden
-//
+//1,ㅡ
 // 5. initContactForm()
 //    이벤트: 폼 제출 버튼 클릭
 //    상태:   각 필드 유효성 true/false
